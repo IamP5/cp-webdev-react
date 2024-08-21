@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+}
+
+.menu__link {
+  font-size: 1.75rem;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menu__link:hover {
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .menu__link {
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
+}
