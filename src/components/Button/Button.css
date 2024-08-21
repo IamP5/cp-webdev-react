@@ -1,0 +1,76 @@
+.button {
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Variants */
+.button--default {
+  background-color: #333;
+}
+
+.button--default:hover {
+  background-color: #555;
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #333;
+}
+
+.button--outline:hover {
+  background-color: #333;
+  color: white;
+}
+
+.button--gradient {
+  background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+}
+
+.button--gradient:hover {
+  opacity: 0.9;
+}
+
+/* Sizes */
+.button--small {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+}
+
+.button--medium {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+.button--large {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+}
+
+/* Ensure text remains visible during the transition for gradient buttons */
+.button--gradient {
+  position: relative;
+  z-index: 1;
+}
+
+.button--gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  border-radius: 40px;
+}
+
+.button--gradient:hover::before {
+  opacity: 0.8;
+}
