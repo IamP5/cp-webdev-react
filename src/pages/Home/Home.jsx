@@ -1,5 +1,6 @@
 import Feature from "../../components/Card/Card";
 import Hero from "../../components/Hero/Hero";
+import HomeImage from "../../assets/images/home.svg";
 import facebook from "../../assets/icons/facebook.png";
 import instagram from "../../assets/icons/instagram.png";
 import tiktok from "../../assets/icons/tiktok.png";
@@ -44,7 +45,12 @@ function Home() {
 
   return (
     <main className="home">
-      <Hero />
+      <Hero
+        title="Crie seus vídeos online"
+        description="Transforme suas ideias em filmes memoráveis: onde a criatividade encontra a simplicidade."
+        cta="Começar agora!"
+        images={[HomeImage]}
+      />
       <section className="feature-cards">
         {features.map((feature) => (
           <Feature key={feature.id} {...feature} />
