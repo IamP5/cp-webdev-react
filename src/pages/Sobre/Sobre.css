@@ -1,0 +1,61 @@
+.sobre {
+  margin: 0 auto;
+  padding: 20px 20px 80px 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.hero__content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero__content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero__content p {
+  margin-bottom: 20px;
+}
+
+.hero__images {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.phone-image {
+  max-width: 45%;
+  height: auto;
+}
+
+.plans h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Adjust PlanCard component styles */
+.plan-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card.highlighted {
+  background-color: #4A90E2;
+  color: white;
+}
