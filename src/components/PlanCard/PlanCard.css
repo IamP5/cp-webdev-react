@@ -1,7 +1,5 @@
 .plan-card {
-  border-radius: 10px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  border-radius: 40px;
   min-height: 560px;
   display: flex;
   flex-direction: column;
