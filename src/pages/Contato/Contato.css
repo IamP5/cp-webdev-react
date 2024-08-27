@@ -1,3 +1,60 @@
-.contato {
-  padding: 40px 0;
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  padding: 40px 20px;
+}
+
+.contact::after {
+  content: none;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .contact::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 50%;
+    width: 1px;
+    background-color: #ccc;
+    transform: translateX(-50%);
+  }
+
+  .contact__text,
+  .contact-form {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.contact__social img {
+  width: 24px;
+  height: 24px;
 }
